@@ -253,6 +253,11 @@
     .teacher-item footer strong {
         display: initial;
         margin-left: 16px;
+        font: 700 2rem Archivo;
+    }
+
+    .teacher-item footer {
+        align-items: center;
     }
 
     .teacher-item footer button {
