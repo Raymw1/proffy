@@ -44,12 +44,16 @@ const proffys = [
     }
 ];
 
+const subjects = ["Artes", "Biologia", "Ciências", "Educação Física", "Física", "Geografia", "História", "Matemática", "Português", "Química"];
+const weekdays = ["Domingo", "Segunda-feira", "Terça-feira", "Quarta-feira", "Quinta-feira", "Sexta-feira", "Sábado"];
+
 server.get("/", function(req, res) {
     return res.render("index.html");
 })
 
 server.get("/study", function(req, res) {
-    return res.render("study.html", { proffys });
+    const filters = req.query;
+    return res.render("study.html", { proffys, filters, subjects, weekdays });
 })
 
 server.get("/give-classes", function(req, res) {
