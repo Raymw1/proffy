@@ -1,0 +1,26 @@
+{
+  "name": "proffy",
+  "version": "1.0.0",
+  "description": "My project I made during the Next Level Week 2 from RocketSeat",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Raymw1/proffy.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Raymw1/proffy/issues"
+  },
+  "homepage": "https://github.com/Raymw1/proffy#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
