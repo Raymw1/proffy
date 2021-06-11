@@ -57,8 +57,19 @@ server.get("/study", function(req, res) {
 })
 
 server.get("/give-classes", function(req, res) {
-    return res.render("give-classes.html");
+    const data = req.query;
+    const isNotEmpty = Object .keys(data).length > 0;
+    if (isNotEmpty) {
+        proffys.push(data);
+        data.subject = getSubject(data.subject);
+        return res.redirect("/study")
+    }
+    return res.render("give-classes.html", { subjects, weekdays });
 })
+
+function getSubject(index) {
+    return subjects[+index - 1];
+}
 
 
 const PORT = process.env.PORT||"3000";
