@@ -1,6 +1,7 @@
 #page-study #container {
     width: 100vw;
     height: 100vh;
+    overflow: auto;
 }
 
 #search-teachers {
@@ -123,6 +124,12 @@
 
 .teacher-item footer a.button:hover {
     background: var(--color-secondary-dark);
+}
+
+#page-study main p.no-results {
+    max-width: 30rem;
+    margin: 12rem auto;
+    text-align: center;
 }
 
 @media (min-width: 700px) {
