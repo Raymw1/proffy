@@ -1,4 +1,4 @@
-module.exports = async function(db, {proffyValue, classValue, classScheduleValues   }) {
+module.exports = async function(db, {proffyValue, classValue, classScheduleValues }) {
     // AWAIT == .then()
     const insertedProffy = await db.run(`
         INSERT INTO proffys (name, avatar, whatsapp, bio) 
