@@ -10,7 +10,7 @@ server.use(express.static("public"));
 server.use(express.urlencoded({ extended: true }));
 const Database = require("./database/db");
 
-const { subjects, weekdays, getSubject, checkValues, convertHoursToMinutes } = require("./utils/format");
+const { subjects, weekdays, getSubject, convertHoursToMinutes } = require("./utils/format");
 
 server.get("/", function(req, res) {
     return res.render("index.html");
