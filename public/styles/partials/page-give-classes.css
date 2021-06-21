@@ -134,6 +134,10 @@
         margin-top: 0;
     }
 
+    .textarea-block:focus-within::after {
+        bottom: .6rem;
+    }
+
     #page-give-classes main footer {
         padding: 40px 64px;
         display: flex;
